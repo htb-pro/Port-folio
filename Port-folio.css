@@ -367,7 +367,7 @@ aside .AboutMe .f1
 }
 aside .AboutMe .f2
 {
-	left - 2rem;;
+	left :-2rem;
 	top: -10px;
 }
  section
