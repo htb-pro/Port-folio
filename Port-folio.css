@@ -4,7 +4,7 @@
 	padding : 0px;
 	
 }
-
+ 
 body
 {
 	height: 100vh;
@@ -363,12 +363,11 @@ aside .AboutMe .forme
 aside .AboutMe .f1
 {
 	left: 0px;
-	bottom: px;
+	bottom: -6.5px;
 }
 aside .AboutMe .f2
 {
-	top: 0px;
-
+	top: -6.5px;
 }
  section
 {
