@@ -360,12 +360,12 @@ aside .AboutMe .forme
 	height : 20vh;
 	position: absolute;
 }
-aside .AboutMe .f1
+aside .AboutMe .forme .f1
 {
 	left: 0px;
 	bottom: -10px;
 }
-aside .AboutMe .f2
+aside .AboutMe .forme .f2
 {
 	left :-2rem;
 	top: -10px;
