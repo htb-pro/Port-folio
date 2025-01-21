@@ -11,10 +11,40 @@ body
 {
     width: 35vw;
     height: auto;
+    position: relative;
     text-align: center;
     margin: 15vh auto;
     background-color: rgb(102, 223, 224);
     padding: 10px;
+}
+@property --angle 
+{
+    syntax: "<angle>";
+    initial-value: 0deg ;
+    inherits: false;
+}
+.container::after,.container::before
+{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from var(--angle),transparent 70%, blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 5px;
+    z-index: -1;
+    animation: 3s contourner  linear  infinite;
+}
+.container::before
+{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes contourner {
+    from{--angle:0deg;}
+    to{--angle : 360deg;}
 }
 .container nav 
 {
@@ -70,7 +100,7 @@ input[type='radio']
 }
 #about:checked ~ nav .slider 
 {
-    left: 20%;
+    left: 22%;
     color: rgb(0, 0, 0,0.3);
 }
 #contact:checked ~ nav  .slider
@@ -80,6 +110,7 @@ input[type='radio']
 }
 #join:checked ~ nav  .slider
 {
+    width: 25%;
     left: 86%;
 }
 .container section > div
@@ -114,7 +145,7 @@ input[type='radio']
     height: 15vh;
     color: black;
     position: relative;
-    background-color: #ff69b4;
+    background-color: rgb(8, 8, 43);
     border-radius: 50%;
     border: 2px solid white;  
     margin: 20px 37%;
@@ -212,7 +243,7 @@ input[type='radio']
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(0, 0, 0,0.4);
     margin-top: 1rem;
 }
 #home:checked ~  section > .contain1 a:hover
@@ -247,4 +278,68 @@ input[type='radio']
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
+}
+@media screen and (max-width : 800px){
+    .container 
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin:7.5rem 0px;
+    background-color: rgb(102, 223, 224);
+    padding: 10px;
+}
+.container section
+{
+    width: 100%;
+}
+.container section .text
+{
+    width:auto;
+    height: 50%;
+    margin-top: 0.5rem;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+#home:checked ~  section > .contain1,.contain2,.contain3,.contain4,.contain5,.contain6,
+{
+    font-size: 20px;
+    align-items: center;
+}
+}
+#about:checked ~ nav .slider 
+{
+    left: 22%;
+    color: rgb(0, 0, 0,0.3);
+}
+#contact:checked ~ nav  .slider
+{
+    left: 45%;
+    width: 39%;
+
+}
+#join:checked ~ nav  .slider
+{
+    left: 86%;
+    width: 24%;
+}
+
+#home:checked ~  section  .contain1 > a 
+{
+    background-color: rgb(0, 0, 0,1.0);
+}
+#home:checked ~  section > .contain1 .htbLogo
+{
+    width: 20vw;
+    height: 15vh;
+    color: black;
+    position: relative;
+    background-color: rgb(8, 8, 43);
+    border-radius: 50%;
+    border: 2px solid white;  
+    margin: 20px 37%;
+    top: -0.1rem;
+    animation: contour 3s  0s infinite ;
+}
 }
