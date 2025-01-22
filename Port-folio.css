@@ -185,7 +185,7 @@ aside .AboutMe img
 	border: 20px solid transparent ;
 	border-radius: 50%;
 	margin-top:5.5rem;
-	margin-left: 20%;
+	margin-left: 22%;
 	animation-name:tourning;
 	animation-delay: 2s;
 	animation-duration: 3.5s;
@@ -215,7 +215,7 @@ aside .AboutMe a
 	background-color : red;
 	padding : 5px;
 	border-radius : 10px;
-	margin-left: 28.5%;
+	margin-left: 24.5%;
 	transition : 1s all;
 	
 }
