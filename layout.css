@@ -343,3 +343,21 @@ input[type='radio']
     animation: contour 3s  0s infinite ;
 }
 }
+@media screen and (min-width:412px)
+{
+    #about:checked ~ nav .slider 
+{
+    left: 24%;
+    color: rgb(0, 0, 0,0.3);
+}
+#contact:checked ~ nav  .slider
+{
+    left: 49%;
+    width: 44%;
+}
+#join:checked ~ nav  .slider
+{
+    width: 25%;
+    left: 90%;
+}
+}
