@@ -345,9 +345,9 @@ input[type='radio']
 }
 @media screen and (min-width:412px)
 {
-    #about:checked ~ nav .slider 
+#about:checked ~ nav .slider 
 {
-    left: 24%;
+    left: 27%;
     color: rgb(0, 0, 0,0.3);
 }
 #contact:checked ~ nav  .slider
