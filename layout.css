@@ -345,6 +345,11 @@ input[type='radio']
 }
 @media screen and (min-width:360px)
 {
+.container 
+{
+    width: 100%;
+    height: auto;
+}
 #home:checked ~  section > .contain1 .htbLogo
 {
     width: 10vw;
