@@ -358,6 +358,6 @@ input[type='radio']
 #join:checked ~ nav  .slider
 {
     width: 25%;
-    left: 90%;
+    left: 94%;
 }
 }
