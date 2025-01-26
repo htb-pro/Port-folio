@@ -347,27 +347,32 @@ input[type='radio']
 {
 .container 
 {
+    width: 110%;
+    height: auto;
+}
+.container section 
+{
     width: 100%;
     height: auto;
 }
 #home:checked ~  section > .contain1 .htbLogo
 {
-    width: 10vw;
-    height: 12.5vh;
+    width: 27vw;
+    height: 15vh;
 }
 #about:checked ~ nav .slider 
 {
-    left: 27%;
+    left: 26%;
     color: rgb(0, 0, 0,0.3);
 }
 #contact:checked ~ nav  .slider
 {
-    left: 49%;
-    width: 44%;
+    left: 50%;
+    width: 45%;
 }
 #join:checked ~ nav  .slider
 {
-    width: 25%;
-    left: 95%;
+    width: 27%;
+    left: 97%;
 }
 }
