@@ -460,7 +460,7 @@ header .Links
 {
 	width :25vw;
 	position : absolute;
-	right: -3.5rem;
+	right: 0px;
 	top: 5px;
 	display: flex;
 	flex-direction : column;
@@ -518,9 +518,9 @@ aside .AboutMe .forme .f2
 }
 section .Services .serve  .serviceForm span i
 {
-	margin: 2.5rem 48.5%;
+	margin: 1rem 48.5%;
 }
-
+}
 
 
 
