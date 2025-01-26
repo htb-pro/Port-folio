@@ -345,6 +345,11 @@ input[type='radio']
 }
 @media screen and (min-width:412px)
 {
+#home:checked ~  section > .contain1 .htbLogo
+{
+    width: 10vw;
+    height: 12.5vh;
+}
 #about:checked ~ nav .slider 
 {
     left: 27%;
@@ -358,6 +363,6 @@ input[type='radio']
 #join:checked ~ nav  .slider
 {
     width: 25%;
-    left: 94%;
+    left: 95%;
 }
 }
