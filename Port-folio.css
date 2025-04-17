@@ -180,26 +180,32 @@ aside .AboutMe .f2
 	transform: rotate(-90deg);
 }
  
-aside .AboutMe img
+aside .AboutMe .Img_div
 {
-	border: 20px solid transparent ;
+	border-right: 20px solid transparent ;
 	border-radius: 50%;
-	margin-top:5.5rem;
-	margin-left: 22%;
-	animation-name:tourning;
-	animation-delay: 2s;
-	animation-duration: 3.5s;
-	transition: all 3s ;
-	animation-iteration-count: infinite
+	 width: 180px;
+	 height: 200px;
+	 background-image: url('htb-picture.jpg');
+	 background-size: cover;
+	 position: relative;
+	 top: 7.5rem;
+	 left: 3.5rem;
 }
-
-@keyframes tourning {
-	25%{border-top-color:  #b0e892;}
-	50%{border-left-color:  #b0e892;}
-	75%{border-bottom-color:  #b0e892;}
-	99%{border-right-color:  #b0e892;}
-
-		}
+.Img_div::before
+{
+	content: "";
+	width: 200px;
+	height:200px;
+	position: absolute;
+	top: 0px;
+	padding: 20px;
+	translate: -7.5% -9%;
+	border-radius: 50%;
+	animation: tourning all 2s infinite;
+	background-image: conic-gradient(from 180deg, transparent 50%, white 80% 350deg);
+	z-index: -1;
+}
 aside .AboutMe .Contact
 {
 	display : flex;
@@ -230,7 +236,7 @@ aside .AboutMe .textImg
 	width: auto;
 	position: relative;
 	font-size: 20px;
-
+	margin-top : 9.5rem;
 }
 aside .AboutMe .textImg p
 {
