@@ -11,11 +11,23 @@
 </head>
 <body >
 	<header>
+<<<<<<< HEAD
+		<div class="logo">Bienvenu sur le site <span>Htb-</span><span style="color: rgb(6, 75, 75)">Pro</span></div>
+		<div class="Links">
+			<a href="#">home</a>
+			<a href="about.html">A propos de <span>Moi</span></a>
+			<a href="#" class="contact">Contact</a>
+		</div>
+		<div class="Background">
+			<div class="color C1"></div>
+			<div class="color C2"></div>
+=======
 		<div class="logo">Bienvenu sur le site <span>Htb-</span><span style="color: red">Pro</span></div>
 		<div class="Links">
 			<a href="#">home</a>
 			<a href="layout.html"><span>Qui suis-Je?</span></a>
 			<a href="#">Contact</a>
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 		</div>
 	</header>
 	<aside>
@@ -23,7 +35,12 @@
 			<div class="forme f1"></div>
 			<div class="forme f2"></div>
 			<div class="Img_div"></div>
+<<<<<<< HEAD
+			<div class="textImg">
+			 	
+=======
 			<div class="textImg">	
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 					<p style="color: rgb(102, 223, 224); font-size: 22px;">Je suis un  <span class="animationText" style="color : #b0e892;"></span></p>
 					<a href="cv_Ir_Heritier_tshim.pdf" download><span><i class="fa fa-upload" aria-hidden="true" style="padding-right: 5px;"></i></span>telecharger mon cv</a>
 				</div>
@@ -39,7 +56,7 @@
 				<p>Nous concevons des applications avec des langages sophistiqués, avec nous automatisez vos tâches quotidiennes avec une notre service à un prix abordable</p></div>
 			<div class="Second_service serve">
 				<div class="serviceForm sF2">
-					<span><i class="fa-light fa-globe-pointer"></i></span>
+					<span><i class="fa-regular fa-globe"> </i></span>
 				</div>
 				<p class="titre T2">Web <span style="color:  #b0e892;">design </span></p>
 				<p>Optimisez votre visibilité avec la mise en place d'une application web.
@@ -108,6 +125,20 @@
 			typeSpeed:30,
 			backSpeed:30,
 			})
+		const Contact = document.querySelector('.contact');
+		const Services = document.querySelectorAll('section');
+		const T1=document.querySelector('.T1');
+		const T2=document.querySelector('.T2');
+		const T3=document.querySelector('.T3');
+		const T4=document.querySelector('.T4');
+		const T5=document.querySelector('.T5');
+		const T6=document.querySelector('.T6');
+		const body= document.querySelector('body');
+		const firstColor= document.querySelector('.C1');
+		const secondColor= document.querySelector('.C2');
+		Contact.addEventListener('click',()=>{ scrollTo(320, 420)});
+		firstColor.addEventListener('click',()=>{body.style.backgroundColor = "#112A46";});
+		secondColor.addEventListener('click',()=>{body.style.backgroundColor = "pink";});
 	</script>
 </body>
 </html>

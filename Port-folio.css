@@ -18,12 +18,14 @@ body
 }
 header
 {
-	position : relative;
+	position : fixed;
 	width: 100vw;
 	height: 10vh;
-	background-color : rgb(102, 223, 224);/*#003f42*/
+	background-color : rgb(102, 223, 224);
 	grid-column: 1/-1;
 	grid-row: 1/2;
+	z-index: 1;
+
 }
 header .logo
 {	height : auto;
@@ -66,13 +68,32 @@ header .Links a:hover span
 {
 	color : white;
 }
+.Background
+{
+	width: 5vw;
+	height: 5vh;
+	position: relative;
+	top: 0.5rem;
+	display: flex;
+	flex-direction: row;
+
+}
+.color 
+{
+	width: 2.5vw;
+	height: 5vh;
+	border: 1px solid white;
+	transition: all 2s ease;
+}
+.C1{background-color :#112A46;	border-top-left-radius: 60%;border-bottom-left-radius: 60%;}
+.C2{background-color: pink;border-top-right-radius: 60%;border-bottom-right-radius: 60%;}
 section
 {
 	width: 60vw;
 	height: auto;
 	background-color: none;
 	position: relative;
-	margin-top: 1.5rem;
+	margin-top: 15vh;
 	grid-column: 2/4;
 	grid-row: 2/3;
 	 
@@ -153,7 +174,7 @@ aside
 	display: flex;
 	flex-direction: column;
 	background-color : rgb(0, 0, 0,0.3);
-	margin-top : 2rem;
+	margin-top: 17vh;
 	margin-left: 2rem;
 	grid-column: 1/2;
 	grid-row: 2/3;
@@ -206,6 +227,16 @@ aside .AboutMe .Img_div
 	background-image: conic-gradient(from 180deg, transparent 50%, white 80% 350deg);
 	z-index: -1;
 }
+<<<<<<< HEAD
+@keyframes tourning {
+	25%{background-image: conic-gradient(from 180deg, transparent 50%, red 80% 350deg);}
+	50%{background-image: conic-gradient(from 200deg, transparent 50%, red 80% 350deg);}
+	75%{background-image: conic-gradient(from 220deg, transparent 50%, red 80% 350deg);}
+	100%{background-image: conic-gradient(from 240deg, transparent 50%, red 80% 350deg);}
+
+		}
+=======
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 aside .AboutMe .Contact
 {
 	display : flex;
@@ -221,7 +252,11 @@ aside .AboutMe a
 	background-color : red;
 	padding : 5px;
 	border-radius : 10px;
+<<<<<<< HEAD
+	margin-left: 20.5%;
+=======
 	margin-left: 24.5%;
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 	transition : 1s all;
 	
 }
@@ -236,7 +271,12 @@ aside .AboutMe .textImg
 	width: auto;
 	position: relative;
 	font-size: 20px;
+<<<<<<< HEAD
+	margin-top: 9.5rem;
+
+=======
 	margin-top : 9.5rem;
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 }
 aside .AboutMe .textImg p
 {
@@ -471,6 +511,38 @@ header .Links
 	display: flex;
 	flex-direction : column;
 }
+<<<<<<< HEAD
+.Background
+{
+	width: 10vw;
+	flex-direction: column;
+}
+.color
+{
+	width: 10vw;
+}
+aside
+{
+	width: 100vw;
+	height: 50vh;
+	position  : relative;
+	background-color : rgb(0, 0,0,0.3);
+	margin: 0px;
+ 	margin-left: 0px;
+	grid-column: 1/-1;
+	grid-row: 2/3;
+}
+
+ aside .AboutMe .Img_div
+ {
+ 	margin-top: -5rem;
+ }	
+
+aside .AboutMe .textImg
+{
+	font-size: 20px;
+	margin-top: 9rem;
+=======
 
 aside
 {
@@ -499,12 +571,17 @@ aside .AboutMe .textImg
 {
 	font-size: 20px;
 	margin-top: 2.5rem;
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 	margin-left: 2rem;
 }
 aside .AboutMe .text p
 {
 	margin-left: 10rem;
+<<<<<<< HEAD
+	
+=======
 	margin-bottom: 1rem;
+>>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 }
 aside .AboutMe .forme
 {
