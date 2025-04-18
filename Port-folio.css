@@ -227,7 +227,6 @@ aside .AboutMe .Img_div
 	background-image: conic-gradient(from 180deg, transparent 50%, white 80% 350deg);
 	z-index: -1;
 }
-<<<<<<< HEAD
 @keyframes tourning {
 	25%{background-image: conic-gradient(from 180deg, transparent 50%, red 80% 350deg);}
 	50%{background-image: conic-gradient(from 200deg, transparent 50%, red 80% 350deg);}
@@ -235,8 +234,6 @@ aside .AboutMe .Img_div
 	100%{background-image: conic-gradient(from 240deg, transparent 50%, red 80% 350deg);}
 
 		}
-=======
->>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 aside .AboutMe .Contact
 {
 	display : flex;
@@ -252,11 +249,8 @@ aside .AboutMe a
 	background-color : red;
 	padding : 5px;
 	border-radius : 10px;
-<<<<<<< HEAD
 	margin-left: 20.5%;
-=======
 	margin-left: 24.5%;
->>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 	transition : 1s all;
 	
 }
@@ -271,12 +265,8 @@ aside .AboutMe .textImg
 	width: auto;
 	position: relative;
 	font-size: 20px;
-<<<<<<< HEAD
 	margin-top: 9.5rem;
-
-=======
 	margin-top : 9.5rem;
->>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 }
 aside .AboutMe .textImg p
 {
@@ -511,7 +501,6 @@ header .Links
 	display: flex;
 	flex-direction : column;
 }
-<<<<<<< HEAD
 .Background
 {
 	width: 10vw;
@@ -542,8 +531,7 @@ aside .AboutMe .textImg
 {
 	font-size: 20px;
 	margin-top: 9rem;
-=======
-
+}
 aside
 {
 	width: 100vw;
@@ -555,33 +543,10 @@ aside
 	grid-column: 1/-1;
 	grid-row: 2/3;
 }
-
- aside .AboutMe img 
- {
- 	width: 100px;
- 	height: 100px;
- 	margin: 0rem 2.5rem;
- 	border: 20px solid transparent ;
- 	animation-name:none;
-	border-top-color:  #b0e892;
-	border-bottom-color:  #b0e892;
- }	
-
-aside .AboutMe .textImg
-{
-	font-size: 20px;
-	margin-top: 2.5rem;
->>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
-	margin-left: 2rem;
-}
 aside .AboutMe .text p
 {
 	margin-left: 10rem;
-<<<<<<< HEAD
-	
-=======
 	margin-bottom: 1rem;
->>>>>>> 61f8c2c8a6125f96b84dcab5ee4c750a3635516e
 }
 aside .AboutMe .forme
 {
