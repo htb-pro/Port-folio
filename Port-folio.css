@@ -496,14 +496,16 @@ header .Links
 	width :25vw;
 	position : absolute;
 	right: -3.5rem;
-	top: 20px;
+	top: 15px;
 	display: flex;
 	flex-direction : column;
 }
 .Background
 {
 	width: 10vw;
-	flex-direction: column;
+	flex-direction: row;
+	transform: rotate(90deg);
+	margin-left: 1rem;
 }
 .color
 {
