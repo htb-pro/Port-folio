@@ -15,6 +15,7 @@ body
 	grid-template-rows: repeat(4,1fr);
 	column-gap: 10px;
 	row-gap: 1rem;
+	transition: all 2s ease;
 }
 header
 {
