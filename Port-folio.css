@@ -84,7 +84,7 @@ header .Links a:hover span
 	width: 2.5vw;
 	height: 5vh;
 	border: 1px solid white;
-	transition: all 2s ease;
+	
 }
 .C1{background-color :#112A46;	border-top-left-radius: 60%;border-bottom-left-radius: 60%;}
 .C2{background-color: pink;border-top-right-radius: 60%;border-bottom-right-radius: 60%;}
