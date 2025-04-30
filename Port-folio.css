@@ -73,8 +73,8 @@ header .Links a:hover span
 {
 	width: 5vw;
 	height: 5vh;
-	position: relative;
-	top: 0.5rem;
+	position: absolute;
+	top: 3.5rem;
 	display: flex;
 	flex-direction: row;
 
@@ -88,6 +88,145 @@ header .Links a:hover span
 }
 .C1{background-color :#112A46;	border-top-left-radius: 60%;border-bottom-left-radius: 60%;}
 .C2{background-color: pink;border-top-right-radius: 60%;border-bottom-right-radius: 60%;}
+.language
+{
+	width: 12vw;
+	height: 8vw;
+	position: relative;
+	left: 5rem;
+	top: -10px;
+}
+select
+{
+	background-color: rgba(0, 0, 0, 0.42);
+	padding: 5px;
+	outline: none;
+	color: white;
+	border: none;
+}
+option:checked
+{
+	color: red;
+}
+.language span 
+{
+	font-size: 22px;
+}
+.language span:hover
+{
+	cursor: pointer;
+}
+.En 
+{
+	color:red;
+}
+.lang
+{
+	width: 6vw;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+.lang:hover
+{
+	background-color: rgba(255, 255, 255, 0.463);
+	cursor: pointer;
+	color:#112A46;
+}
+aside
+{
+	width: 25vw;
+	height: 50%;
+	position  : relative;
+	display: flex;
+	flex-direction: column;
+	background-color : rgb(0, 0, 0,0.3);
+	margin-top: 17vh;
+	margin-left: 2rem;
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+aside  .forme 
+{
+	width: 7.5vw;
+	height: 7.5vw;
+	position: absolute;
+	background-color: rgb(102, 223, 224) ;
+	border-radius: 100% 0% 98% 2% / 81% 100% 0% 19%;
+	
+}
+aside  .f1
+{
+	bottom: 0px;
+	left: 0px;
+	transform: rotate(90deg);
+}
+aside  .f2
+{
+	top : 0px;
+	right: 0px;
+	transform: rotate(-90deg);
+}
+ 
+aside .AboutMe .Img_div
+{
+	border-right: 20px solid transparent ;
+	border-radius: 50%;
+	 width: 180px;
+	 height: 200px;
+	 background-image: url('htb-picture.jpg');
+	 background-size: cover;
+	 position: relative;
+	 top: 7.5rem;
+	 left: 3.5rem;
+}
+.Img_div::before
+{
+	content: "";
+	width: 200px;
+	height:200px;
+	position: absolute;
+	top: 0px;
+	padding: 20px;
+	translate: -7.5% -9%;
+	border-radius: 50%;
+	background-image: conic-gradient(from 180deg, transparent 50%, white 80% 350deg);
+	z-index: -1;
+}
+aside .AboutMe a 
+{	
+	font-family : times new roman;
+	font-size : 22px;
+	text-decoration : none;
+	color : white;
+	background-color : red;
+	padding : 5px;
+	border-radius : 10px;
+	margin-left: 24.5%;
+	transition : 1s all;
+	
+}
+aside .AboutMe a:hover
+{
+	color : #b0e892;
+	background-color : #005F7B;
+}
+
+aside .AboutMe .textImg 
+{
+	width: auto;
+	position: relative;
+	font-size: 20px;
+	margin-top: 10rem;
+}
+aside .AboutMe .textImg p
+{
+	 
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
 section
 {
 	width: 60vw;
@@ -108,6 +247,16 @@ section .Services
 	flex-wrap: wrap;
 	flex-grow: 1;
 }
+/*English style (internatiolisation)*/
+.Text_En_firstService,.Text_En_secondService,.Text_En_thirdService,.Text_En_fourthService,.Text_En_firthService,.Text_En_sixthService
+{
+	display: none;
+}
+.paragraph
+{
+	margin-left: 1rem;
+}
+/*-----------------------------------*/
 section .Services .serve
 {
 	height: auto;
@@ -166,114 +315,6 @@ section .Services .serve:hover  .serviceForm i
 section .Services .serve:hover  .serviceForm
 {
 	background-color: red;
-}
-aside
-{
-	width: 25vw;
-	height: 50%;
-	position  : relative;
-	display: flex;
-	flex-direction: column;
-	background-color : rgb(0, 0, 0,0.3);
-	margin-top: 17vh;
-	margin-left: 2rem;
-	grid-column: 1/2;
-	grid-row: 2/3;
-}
-aside .AboutMe .forme 
-{
-	width: 7.5vw;
-	height: 7.5vw;
-	position: absolute;
-	background-color: rgb(102, 223, 224) ;
-	border-radius: 100% 0% 98% 2% / 81% 100% 0% 19%;
-	
-}
-aside .AboutMe .f1
-{
-	bottom: 0px;
-	left: 0px;
-	transform: rotate(90deg);
-}
-aside .AboutMe .f2
-{
-	top : 0px;
-	right: 0px;
-	transform: rotate(-90deg);
-}
- 
-aside .AboutMe .Img_div
-{
-	border-right: 20px solid transparent ;
-	border-radius: 50%;
-	 width: 180px;
-	 height: 200px;
-	 background-image: url('htb-picture.jpg');
-	 background-size: cover;
-	 position: relative;
-	 top: 7.5rem;
-	 left: 3.5rem;
-}
-.Img_div::before
-{
-	content: "";
-	width: 200px;
-	height:200px;
-	position: absolute;
-	top: 0px;
-	padding: 20px;
-	translate: -7.5% -9%;
-	border-radius: 50%;
-	animation: tourning all 2s infinite;
-	background-image: conic-gradient(from 180deg, transparent 50%, white 80% 350deg);
-	z-index: -1;
-}
-@keyframes tourning {
-	25%{background-image: conic-gradient(from 180deg, transparent 50%, red 80% 350deg);}
-	50%{background-image: conic-gradient(from 200deg, transparent 50%, red 80% 350deg);}
-	75%{background-image: conic-gradient(from 220deg, transparent 50%, red 80% 350deg);}
-	100%{background-image: conic-gradient(from 240deg, transparent 50%, red 80% 350deg);}
-
-		}
-aside .AboutMe .Contact
-{
-	display : flex;
-	flex-direction : column;
-	margin-left : 1rem;
-}
-aside .AboutMe a 
-{	
-	font-family : times new roman;
-	font-size : 22px;
-	text-decoration : none;
-	color : white;
-	background-color : red;
-	padding : 5px;
-	border-radius : 10px;
-	margin-left: 20.5%;
-	margin-left: 24.5%;
-	transition : 1s all;
-	
-}
-aside .AboutMe a:hover
-{
-	color : #b0e892;
-	background-color : #005F7B;
-}
-
-aside .AboutMe .textImg 
-{
-	width: auto;
-	position: relative;
-	font-size: 20px;
-	margin-top: 10rem;
-}
-aside .AboutMe .textImg p
-{
-	 
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	text-align: center;
 }
 
 footer
@@ -344,67 +385,83 @@ header .Links a:hover
 {
 	color: white;
 }
+header .Background
+{
+	width: 15vw;
+	top: 7rem;
+}
+header .color
+{
+	width: 7.5vw;
+	border-radius: 0px;
+	
+}
 aside
 {
 	width: 100vw;
-	height: 60vh;
+	height: auto;
 	position  : relative;
 	background-color : rgb(0, 0,0,0.3);
+	display: flex;
+	flex-direction: column;
 	margin: 0px;
  	margin-left: 0px;
 	grid-column: 1/-1;
 	grid-row: 2/3;
 }
-
- aside .AboutMe img 
- {
- 	width: 100px;
- 	height: 100px;
- 	margin: 0rem 2.5rem;
- 	border: 20px solid transparent ;
- 	animation-name:none;
-	border-top-color:  #b0e892;
-	border-bottom-color:  #b0e892;
- }	
+.AboutMe
+{
+	position: relative;
+}
+aside .AboutMe .Img_div
+{
+	width: 150px;
+	height: 160px;
+	top: 30px;
+	left: 6rem;
+}
+aside .AboutMe .Img_div::before
+{
+	width: 165px;
+	height: 155px;
+}
 aside .AboutMe a 
 {	
-	font-family : times new roman;
+	font-family : "times new roman";
 	font-size : 18px;
 	text-decoration : none;
 	color : #b0e892;
 	background-color : #005F7B;
 	padding : 0.5rem;
 	border-radius : 10px;
-	margin-top: -1rem  ;
 	transition : 1s all;
-	
 }
 aside .AboutMe .textImg
 {
 	font-size: 20px;
-	margin-top: 2.5rem;
-	margin-left: 3rem;
-}
-aside .AboutMe .text p
-{
-	margin-left: 10rem;
+	margin-top: 4rem;
 	margin-bottom: 1rem;
 }
-aside .AboutMe .forme
+aside .AboutMe .textImg p
 {
-	width: 20vw;
-	height : 20vh;
+	margin-left: 0rem;
+	margin-bottom: 1rem;
+}
+aside .forme
+{
+	width: 15vw;
+	height : 10vh;
 	position: absolute;
 }
-aside .AboutMe .forme .f1
+aside  .f1
 {
 	left: 0px;
-	bottom: -10px;
+	bottom: -1rem;
 }
-aside .AboutMe .forme .f2
+aside .f2
 {
-	left :-2rem;
-	top: -10px;
+	right :0px;
+	top: -0.8rem;
 }
  section
 {
@@ -413,26 +470,27 @@ aside .AboutMe .forme .f2
 	height: auto;
 	background : none;
 	position: relative;	
+	padding: 0px;
 	grid-column: 1/-1;
-	grid-row: 3/4;
+	grid-row: 3/-3;
+	margin-top: -0rem;
 }
 section .Services
 {
 	width: 100%;
 	height: 100%;
 	background-color :none;
-	display: grid;
-	grid-template-columns: 2fr;
+	justify-content: center;
+
 }
 section .Services .serve
 {
 	position: relative;
-	font-family : ;
 	font-size : 12.5px;
 	width :50vw;
 	height: auto;
 	background-color : rgb(0, 0, 0,0.3);
-	margin : 2.5px;
+	margin-top: 0px;
 	border-radius: 10px;
 	transition: all 2s;
 	overflow: hidden;
@@ -445,7 +503,7 @@ section .Services .serve .titre
 }
 section .Services .serve  .serviceForm span i
 {
-	margin: 1rem 50%;
+	margin: 0.5rem 45%;
 	color: rgb(102, 223, 224);
 	font-size: 35px;
 }
@@ -464,131 +522,5 @@ footer .contact
 	padding-top: 10px;
 	width: auto;
 	height: auto;
-}
-}
-@media screen and (max-width : 360px){
-body
-{
-	width: 100%;
-	background-color: #112A46;
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	grid-template-rows: repeat(4,1fr);
-	 
-}
-header
-{
-	position : relative;
-	width: 100%;
-	height: 20vh;
-	background-color : rgb(102, 223, 224);
-	grid-column: 1/-1;
-	grid-row: 1/2;
-}
-header .logo
-{	height : auto;
-	position : absolute;
-	bottom: 0px;
-	font-size: 20px;
-}
-
-header .Links
-{
-	width :25vw;
-	position : absolute;
-	right: -3.5rem;
-	top: 15px;
-	display: flex;
-	flex-direction : column;
-}
-.Background
-{
-	width: 10vw;
-	flex-direction: row;
-	transform: rotate(90deg);
-	margin-left: 1rem;
-}
-.color
-{
-	width: 10vw;
-}
-aside
-{
-	width: 100vw;
-	height: 50vh;
-	position  : relative;
-	background-color : rgb(0, 0,0,0.3);
-	margin: 0px;
- 	margin-left: 0px;
-	grid-column: 1/-1;
-	grid-row: 2/3;
-}
-
- aside .AboutMe .Img_div
- {
- 	margin-top: -5rem;
- }	
-
-aside .AboutMe .textImg
-{
-	font-size: 20px;
-	margin-top: 9rem;
-}
-aside
-{
-	width: 100vw;
-	height: 50vh;
-	position  : relative;
-	background-color : rgb(0, 0,0,0.3);
-	margin: 0px;
- 	margin-left: 0px;
-	grid-column: 1/-1;
-	grid-row: 2/3;
-}
-aside .AboutMe .text p
-{
-	margin-left: 10rem;
-	margin-bottom: 1rem;
-}
-aside .AboutMe .forme
-{
-	width: 20vw;
-	height : 10vh;
-	position: absolute;
-}
-aside .AboutMe .forme .f1
-{
-	left: 0px;
-	bottom: -5px;
-}
-aside .AboutMe .forme .f2
-{
-	right :0px;
-	top: 0px;
-}
-section .Services .serve  .serviceForm span i
-{
-	margin: auto 48.5%;
-}
-section
-{
-	width: 100%;
-	height: auto;
-	background-color: none;
-	position: relative;
-	margin-top: 1.5rem;
-	grid-column: 1/-1;
-	grid-row: 3/4;
-	 
-}
-section .Services
-{
-	width: 100vw;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	flex-grow: 1;
-	justify-content: center;
 }
 }
