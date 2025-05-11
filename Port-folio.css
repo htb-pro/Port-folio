@@ -371,7 +371,7 @@ header .Links
 {
 	width :25vw;
 	position : absolute;
-	right: -2.5rem;
+	right: -3.5rem;
 	top: 5px;
 	display: flex;
 	flex-direction : column;
@@ -456,12 +456,12 @@ aside .forme
 aside  .f1
 {
 	left: 0px;
-	bottom: -1rem;
+	bottom: -10px;
 }
 aside .f2
 {
 	right :0px;
-	top: -0.8rem;
+	top: -10px;
 }
  section
 {
