@@ -28,6 +28,14 @@ header
 	z-index: 1;
 
 }
+.nav_bar
+{
+	display: none;
+}
+.toggle_bars
+{
+	display: none;
+}
 header .logo
 {	height : auto;
 	margin: 10px 25px;
@@ -38,6 +46,12 @@ header  .logo span
 	font-family : times new roman;
 	color : rgb(0, 0,0);
 }
+.secondSpan
+{
+	padding: 5px;
+	background-color: rgb(0, 0,0,0.7);
+	font-weight: bold;
+}
 header .Links
 {
 	width :auto;
@@ -46,8 +60,7 @@ header .Links
 	bottom : 0px;
 	display: flex;
 	flex-direction : row;
-	background-color :;
-	margin-right : 5rem;
+	margin-right : 7rem;
 }
 header .Links a
 {
@@ -74,7 +87,8 @@ header .Links a:hover span
 	width: 5vw;
 	height: 5vh;
 	position: absolute;
-	top: 3.5rem;
+	top: -5px;
+	right: -4.5rem;
 	display: flex;
 	flex-direction: row;
 
@@ -90,48 +104,39 @@ header .Links a:hover span
 .C2{background-color: pink;border-top-right-radius: 60%;border-bottom-right-radius: 60%;}
 .language
 {
-	width: 12vw;
-	height: 8vw;
 	position: relative;
-	left: 5rem;
-	top: -10px;
-}
-select
-{
-	background-color: rgba(0, 0, 0, 0.42);
-	padding: 5px;
-	outline: none;
-	color: white;
-	border: none;
-}
-option:checked
-{
-	color: red;
 }
 .language span 
 {
-	font-size: 22px;
+	font-size: 25px;
 }
 .language span:hover
 {
 	cursor: pointer;
 }
-.En 
-{
-	color:red;
-}
-.lang
+
+.selected_language
 {
 	width: 6vw;
+	height: 10vh;
 	font-size: 20px;
-	text-align: center;
+	display: none;
 	color: white;
+	list-style-type: none;
+	text-align: center;
+	margin-left: -5rem;
+	margin-top: -10px;
+	background-color: #052d39c9;
+	position: absolute;
 }
-.lang:hover
+ 
+ul li:hover
 {
-	background-color: rgba(255, 255, 255, 0.463);
+	width: 6vw;
+	height: 5vh;
+	color: black;
+	background-color: #fff;
 	cursor: pointer;
-	color:#112A46;
 }
 aside
 {
@@ -353,31 +358,90 @@ footer .confident
 }
 	header
 {
-	position : relative;
-	width: 100%;
-	height: 20vh;
-	background-color : rgb(102, 223, 224);
-	grid-column: 1/-1;
-	grid-row: 1/2;
+		position : relative;
+        height: 60px;  
+        position: relative;
+        text-align: center;
+        border-radius: 10px;
+		background-color : rgb(102, 223, 224);
+		grid-column: 1/-1;
+		grid-row: 1/2;
+		text-align: center;
+		transform: translateX(0%);
 }
+    
+     header.show
+    {
+        height: 150px;
+        transition: all 0.5s;
+    }
+.toggle_bars
+    {
+        width: 2rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+.bar 
+    {
+        width: 100%;
+        height: 5px;
+        margin-top: 2px;
+        background-color: black;
+        border-radius: 5px;
+        transition: all 0.5s;
+    }
+    header.show .B1
+    {
+        transform: rotate(50deg) translatey(10px);
+        background-color: red;
+    }
+    header.show .B2
+    {
+        display: none;
+    }
+     header.show .B3
+    {
+        transform: rotate(-50deg) translatey(-6px) translatex(-5px);
+        background-color: red;
+    }
+
 header .logo
 {	height : auto;
-	margin-left : 5px;
-	margin-top: 2rem;
-	font-size: 20px;
+	margin-left : -5px;
+	margin-top: 1rem;
+	font-size: 25px;
 }
-
+.secondSpan
+{
+	padding: 2px;
+	background-color: rgb(0, 0,0,0.7);
+	font-weight: bold;
+}
 header .Links
 {
-	width :25vw;
+	width :auto;
+	display: none;
 	position : absolute;
-	right: -3.5rem;
-	top: 5px;
-	display: flex;
+	left: 5rem;
+	top: 3.5rem;
 	flex-direction : column;
-	
+	transition: all 0.5s;
 }
-header .Links a 
+header.show .Links
+{
+		display: flex;
+		
+}
+.selected_language
+{
+	width: auto;
+	height: 6vh;
+}
+header .Links a,.language span
 {
 	font-size: 21px;
 }
@@ -388,20 +452,21 @@ header .Links a:hover
 header .Background
 {
 	width: 15vw;
-	top: 7rem;
+	top: 3rem;
+	left: -4rem;
 }
 header .color
 {
 	width: 7.5vw;
 	border-radius: 0px;
-	
+
 }
 aside
 {
 	width: 100vw;
 	height: auto;
 	position  : relative;
-	background-color : rgb(0, 0,0,0.3);
+	background-color : rgb(0, 0, 0,0.3);
 	display: flex;
 	flex-direction: column;
 	margin: 0px;
@@ -456,11 +521,11 @@ aside .forme
 aside  .f1
 {
 	left: 0px;
-	bottom: -10px;
+	bottom: -12px;
 }
 aside .f2
 {
-	right :0px;
+	right :15px;
 	top: -10px;
 }
  section
