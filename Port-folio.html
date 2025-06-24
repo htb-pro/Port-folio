@@ -1,64 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="{%static 'css/home.css'%}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+<title>Port-folio site</title>
+	<link rel="stylesheet" type="text/css" href="Port-folio.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 </head>
-<body>
-    
-    <div class="container">
-            <input type="radio" name="slider" id="home" checked>
-            <input type="radio" name="slider" id="about">
-            <input type="radio" name="slider" id="skills">
-            <input type="radio" name="slider" id="join">
-         <nav>
-             
-            <label for="home" class="home">Home</label>
-            <label for="about" class="about">About</label>
-            <label for="skills" class="skills">Competences</label>
-            <label for="join" class="join">Contact</label>
-            <div class="slider"></div>
-        </nav>
-            <section>
-                <div class="text contain1">
-                    <h2><p class=" titre titre1">Message de bienvenu</p></h2>
-               <p>Vous êtes les bienvenus sur la page concernant l'auteur, Si vous souhaitez revenir sur la page principale cliquez sur le bouton ci-dessous  </p>
-              <div class="htbLogo">
-                <span class="lettre L1">H</span>
-                <span class="lettre L2">t</span>
-                <span class="lettre L3">b</span>
-                <span class="lettre L4">-</span>
-                <span class="lettre L5">P</span>
-                <span class="lettre L6">r</span>
-                <span class="lettre L7">o</span>
-              </div>
-               <a href="Port-folio.html">Home</a> 
-           </div>
-                <div class="text  contain2">
-                    <p class=" titre titre2">Concernant l'auteur</p>
-                    <p> Salut, je m'appelle heritier bukasa, je suis ingenieur en informatiques. 
-                        Depuis l'apparition de l'ordinateur, il est devenu un outil indispensable au progrès, au développement et ainsi de suite,
-                      c'est ainsi que je vous propose des services informatiques qui sont sur la <a href="Port-folio.html" style="color: red;">page d'accueil</a> car je suis ingénieur informaticien.
-                    pour me contacter, rendez-vous dans l'onglet contact où vous trouverez mes coordonnées. merci :) !</p> </div>
-                <div class="text contain3">
-                    <p class=" titre titre3">Mes competences</p>
-                    <p style="margin-bottom: 2rem;"> En ce qui concerne mes compétences en général, je suis bon en programmation et en conception de systèmes d'information. pour plus d'informations téléchargez mon CV.</p>                
-                    <a href="cv_Ir_Heritier_tshim.pdf"  download><span><i class="fa fa-upload" aria-hidden="true" style="padding-right: 5px;"></i></span><span class="myCv">telecharger mon cv</span></a>
-                </div>
-                    
-                    <div class="text contain4">
-                    <p class="titre titre4">Entrer en Contact</p>
-                   <p>Pour plus d'informations contacter nous : </p>
-                   <p><span><i class="fa fa-phone" aria-hidden="true"></i> : </span><span>+243 991 152 067</span></p>
-                   <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i> : </span><span>heritiertshim07@gmail.com</span></p>       
-                </div>
-            </section>
-    </div>
-    <script src="index.js"></script>
+<body >
+	<header>
+				<div class="logo"><span class="welcomMessage">Bienvenu sur le site</span> <span>Htb-</span><span style="color:yellow;" class="secondSpan">Pro</span></div>
+			<div class="Links">
+				<div class="language"> 
+					<span class="menu_language">Langue</span>
+					<ul class="selected_language">
+						<li class="lang Fr" value="Fr">Francais</li>
+						<li class="lang En" value="En">Englais</li>
+					</ul>
+					</div>
+				<a href="#">home</a>
+				<a href="about.html" class="about">A propos de <span>Moi</span></a>
+				<span class="contact"><a href="#" >Contact</a></span>
+			<div class="Background">
+				<div class="color C1"></div>
+				<div class="color C2"></div>
+			</div>
+			</div>
+			
+			      <div class="toggle_bars">
+            <div class="bar B1"></div>
+            <div class="bar B2"></div>
+            <div class="bar B3"></div>
+        </div>
+	</header>
+	<aside>
+		<div class="forme f1"></div>
+		<div class="forme f2"></div>
+		<div class="AboutMe">
+			<div class="Img_div"></div>
+			<div class="textImg">
+				<p style="color: rgb(102, 223, 224); font-size: 22px;" ><span class="Introdiousing">Je suis un </span><span class="animationText" style="color : #b0e892;"></span></p>
+				<a href="cv_Ir_Heritier_tshim.pdf" download><span><i class="fa fa-upload" aria-hidden="true" style="padding-right: 5px;"></i></span><span class="myCv">telecharger mon cv</span></a>
+			</div>
+		</div>
+	</aside>
+	<section>
+		<div class="Services">
+			<div class="First_service serve">
+				<div class="serviceForm sF1">
+					<span><i class="fa fa-code"></i></span>
+				</div>
+				<p class="titre T1">Programmation</p>
+				<p class="Text_Fr_firstService">Nous concevons des applications avec des langages sophistiqués, avec nous automatisez vos tâches quotidiennes avec une notre service à un prix abordable</p>
+				<p class="Text_En_firstService paragraph">We design applications with sophisticated languages, with us automate your daily tasks with a service at an affordable price</p>
+			</div>
+	
+			<div class="Second_service serve">
+				<div class="serviceForm sF2">
+					<span></span>
+				</div>
+				<p class="titre T2">Web <span style="color:  #b0e892;">design </span></p>
+				<p class="Text_Fr_secondService">Optimisez votre visibilité avec la mise en place d'une application web.
+					Créer un site internet est une expression de sérieux dans votre activité, entreprise.
+					nous vous proposons ce service avec un contenu de qualité</p>
+				<p class="Text_En_secondService paragraph">
+					Optimize your visibility with the implementation of a web application.Creating a website is an expression of seriousness in your activity, business.We offer you this service with quality content
+				</p>
+			</div>
+			<div class="Third_service serve">
+				<div class="serviceForm sF3">
+					<span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+				</div>
+			<p class="titre T3">Analyse de données</p>
+				<p class="Text_Fr_thirdService">Nous vous aidons a bien prendre la décision sur l'évolution de votre business sur base d'une bonne analyse de données. mauvaise gestion des données peut mener a une faillite, ainsi par ce service nous traitons le données en vue de produire des informations efficaces et fiable</p>
+				<p class="Text_En_thirdService paragraph">
+					We help you make the right decision on the evolution of your business based on good data analysis. Poor data management can lead to bankruptcy, so through this service we process the data in order to produce efficient and reliable information
+				</p>
+			</div>
+			<div class="Fourth_service serve">
+				<div class="serviceForm sF4">
+					<span><i class="fa fa-laptop" aria-hidden="true"></i>
+					</span>
+				</div>
+				<p class="titre T4">Formation informatique</p>
+				<p class="Text_Fr_fourthService">la connaissance de l'informatique est devenu indispensable au 21° siecle, offrer vous une formation de qualité a un prix abordable.</p>
+				<p class="Text_En_fourthService  paragraph">
+					Knowledge of computers has become essential in the 21st century, to offer you quality training at an affordable price
+				</p>
+			</div>
+			<div class="Firth_service serve">
+				<div class="serviceForm sF5">
+					<span><i class="fa fa-database"></i></span>
+				</div>
+				<p class="titre T5">Administration de base de données</p>
+				<p class="Text_Fr_firthService">La gestion des données est d'une grande importance 
+					car une base de données mal conçue peut présenter des failles qui risquent de ruiner une organisation.
+				</p>
+				<p class="Text_En_firthService paragraph">
+					Data management is of great importance Because a poorly designed database can have flaws that can ruin an organization.
+				</p>
+			</div>
+			<div class="Sixth_service serve">
+				<div class="serviceForm  sf6">
+					<span><i class="fa fa-windows" aria-hidden="true"></i></span>
+				</div>
+					<p class="titre T6">Administration systeme</p>
+				<p class="Text_Fr_sixthService">La maîtrise ou la gestion du fonctionnement d'un système d'exploitation est un élément essentiel
+					signifie être épargné par de longs processus. 
+					alors, vous souhaitez apprendre à maîtriser le système Windows comme un professionnel, contactez-nous
+   					Icône de validation par la communauté</p>
+				<p class="Text_En_sixthService paragraph">
+					Mastering or managing the operation of an operating system is an essential elementmeans being spared from long processes.So, you want to learn how to master the Windows system like a professional, contact us Community Validation Icon
+				</p>
+			</div>
+			<!--<div class="Seventh_service serve">
+					<p class="titre T7">Office automation</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			8</div>-->
+		</div>
+		<div class="Realisations">
+			<div class="First_Realisation Real">	</div>
+			<div class="Second_Realisation Real"></div>
+			<div class="Third_Realisation Real"></div>
+		</div>
+	</section>
+	<footer>
+		<div class="contact">
+			<p><span><i class="fa fa-phone" aria-hidden="true"></i> : </span><span>+243 991 152 067</span></p>
+			<p><span><i class="fa fa-phone" aria-hidden="true"></i> : </span><span>+243 897 401 210</span></p>
+			<p><span><i class="fa fa-envelope-o" aria-hidden="true"></i> : </span><span>heritiertshim07@gmail.com</span></p>
+			<p><span><i class="fa fa-linkedin-square" aria-hidden="true"></i> : </span>Ir Heritier tshim's Htb</p>
+		</div>
+		<div class="confident">
+			<span><i class="fa fa-copyright" aria-hidden="true"></i> </span><span class="Rights">Tout droits reservés</span>
+		</div>
+	</footer>
+	<script src="index.js"></script>
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed(".animationText",
+			{strings: ["Ir informaticien","programmeur","formateur","analyste de données","web designer"],
+			typeSpeed:50,
+			backSpeed:40,
+			})
+	</script>
 </body>
 </html>
